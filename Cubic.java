@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class graph{
+public class Cubic{
     public static void main(String arg[]){
       takeInput();
     }
