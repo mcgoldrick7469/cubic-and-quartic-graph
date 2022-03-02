@@ -1,112 +1,53 @@
 # cubic-and-quartic-graph
 used https://guides.lib.berkeley.edu/how-to-write-good-documentation for how to write this
+used https://www.markdownguide.org/basic-syntax for markdown syntax
 computer science project
 
 purpose: this programs purpose is to take in a cubic or quartic function and return the ordered pairs along with some other information
 
-ex: the function I want to input is f(x) = 3(x-1)³(x-5)
+## how to use this program
+'insert unlisted video of using program'
 
-<-------program starts------->
-
-enter amount of x intercepts on graph: 2
-
-enter coeffient: 3
-
-enter x intercepts: 1
-
-5
-
-enter power's: 1 to the power of 3
-
-5 to the power of 1
-
-printing ordered pairs:
-
-(-10, 59895)    <---- max y of scope
-
-(-9, 42000)
-
-(-8, 28431)
-
-(-7, 18432)
-
-(-6, 11319)
-
-(-5, 6480)
-
-(-4, 3375)
-
-(-3, 1536)
-
-(-2, 567)
-
-(-1, 144)
-
-(0, 15)    <---- y-intercept        
-
-(1, 0)    <---- x-intercept
-
-(2, -9)
-
-(3, -48)
-
-(4, -81)    <---- min y of scope    
-
-(5, 0)    <---- x-intercept
-
-(6, 375)
-
-(7, 1296)
-
-(8, 3087)
-
-(9, 6144)
-
-(10, 10935)
-
-<-------program ends------->
-
-inputs/outputs of functions:
+## function documentation
 
 
-input: x-intercepts of polynomial function
+**signSwap(int[] xinter)**
 
-output: -(x-intercepts)
+ - input: x-intercepts of polynomial function
 
-signSwap(int[] xinter)
-
-
-input: x cord, x-intercepts, coeffient, power of the corresponding x-intercept
-
-output: y of polynomial function
-
-solveForY(int x,int[] equation,int coeffient,int[] pow)
+ - output: -(x-intercepts)
 
 
-input: x-inters
+**solveForY(int x,int[] equation,int coeffient,int[] pow)**
 
-output: scope or how big the graph should be 
+- input: x cord, x-intercepts, coeffient, power of the corresponding x-intercept
 
-graphScope(int[] xInter)
-
-
-input: x-intercepts, coeffient, pow of the corresponding x-intercept
-
-output: ordered pairs
-
-graphBuilder(int[] xinters,int coeffient,int pow[])
+- output: y of polynomial function
 
 
-input: ordered pairs
+**graphScope(int[] xInter)**
 
-output: largest y in scope
+- input: x-inters
 
-relativeMax(int[][] orderedPairs)
+- output: scope or how big the graph should be 
 
 
-input: ordered pairs
+**graphBuilder(int[] xinters,int coeffient,int pow[])**
 
-output: smallist y in scope
+- input: x-intercepts, coeffient, pow of the corresponding x-intercept
 
-relativeMin(int[][] orderedPairs)
+- output: ordered pairs
 
+
+**relativeMax(int[][] orderedPairs)**
+
+- input: ordered pairs
+
+- output: largest y in scope
+
+
+**relativeMin(int[][] orderedPairs)**
+
+- input: ordered pairs
+
+- output: smallist y in scope
