@@ -1,11 +1,20 @@
 # cubic-and-quartic-graph
+
+
 used https://guides.lib.berkeley.edu/how-to-write-good-documentation for how to write this
+
+
 used https://www.markdownguide.org/basic-syntax for markdown syntax
+
+
 computer science project
 
-purpose: this programs purpose is to take in a cubic or quartic function and return the ordered pairs along with some other information
+## purpose
+
+- this programs purpose is to take in a cubic or quartic function and return the ordered pairs along with some other information
 
 ## how to use this program
+
 'insert unlisted video of using program'
 
 ## function documentation
