@@ -94,7 +94,6 @@ public class Cubic{
     }
   
     //output: ordered pair and information about them
-    //add try catch recursion to every question
     public static void takeInput(){
       Scanner scan = new Scanner(System.in);
       
