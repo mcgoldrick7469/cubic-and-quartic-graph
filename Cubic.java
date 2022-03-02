@@ -16,11 +16,9 @@ public class Cubic{
 
     //input: x to solve for and x-inters
     //output: y of polynomial function
-    //add leading coeffient and exponent
     public static int solveForY(int x,int[] equation,int coeffient,int[] pow){
-      //f(x)= (x-2)(x+5)(x+1)
       int[] halfa = new int[equation.length]; //half answer not half ass
-      int a = 1; //setting this to one should not effect anything since this is for *ing
+      int a = coeffient; //setting this to one should not effect anything since this is for *ing
       for(int i = 0; i< equation.length; i++){
         halfa[i] = (int) Math.pow((x+equation[i]),pow[i]); 
       }
@@ -28,7 +26,6 @@ public class Cubic{
       for(int i = 0; i<halfa.length; i++){
         a = halfa[i] * a;
       }
-      a = a * coeffient;
       return a;
     }
 
@@ -53,7 +50,6 @@ public class Cubic{
     public static int[][] graphBuilder(int[] xinters,int coeffient,int pow[]){
       xinters = signSwap(xinters);
       int scope = graphScope(xinters); //USE DIFFRENT VARIABLE NAMES bc for some reason graphscope math.abs the xinters in this function
-      //int scope = 11;
       int[][] graph = new int[scope*2+1][2]; //ordered pair x,y
 
       for(int i = scope; i > 0; i--){
@@ -102,7 +98,7 @@ public class Cubic{
     public static void takeInput(){
       Scanner scan = new Scanner(System.in);
       
-      int LengthOfxs =  0;
+      int LengthOfxs = 0;
       int[] xIntercepts = new int[0];
       int coeffient = 0;
       int[] pows = new int[0];
@@ -150,11 +146,12 @@ public class Cubic{
       }
       
       scan.close();
+      
       //print
       int[][] orderedPairs = graphBuilder(xIntercepts,coeffient,pows);
       int maxOfScope = relativeMax(orderedPairs);
       int minOfScope = relativeMin(orderedPairs);
-      System.out.println("printing order pairs: ");
+      System.out.println("printing ordered pairs: ");
       for(int i = 0; i<orderedPairs.length; i++){
         System.out.print("(" + (orderedPairs[i][0]) + ", ");
         System.out.print((orderedPairs[i][1]) + ")");
