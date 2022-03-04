@@ -1,3 +1,4 @@
+//this can also be found at https://github.com/mcgoldrick7469/cubic-and-quartic-graph
 import java.util.Scanner;
 public class Cubic{
     public static void main(String arg[]){
