@@ -1,4 +1,3 @@
-//this can also be found at https://github.com/mcgoldrick7469/cubic-and-quartic-graph
 import java.util.Scanner;
 public class Cubic{
     public static void main(String arg[]){
@@ -104,7 +103,7 @@ public class Cubic{
       int[] pows = new int[0];
 
       //ask for amount of x-inters
-      try{ //handling exceptions taken from https://rollbar.com/guides/java/how-to-handle-exceptions-in-java/#:~:text=The%20try%2Dcatch%20is%20the,simplest%20mechanism%20for%20handling%20exceptions.
+      try{ 
         System.out.print("enter amount of x intercepts on graph: ");
         LengthOfxs =  scan.nextInt();
         xIntercepts = new int[LengthOfxs];
