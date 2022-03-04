@@ -1,21 +1,10 @@
 # cubic-and-quartic-graph
 
+computer science project still being worked on.
 
-used https://guides.lib.berkeley.edu/how-to-write-good-documentation for how to write this
+## end goal
 
-
-used https://www.markdownguide.org/basic-syntax for markdown syntax
-
-
-computer science project
-
-## purpose
-
-- this programs purpose is to take in a cubic or quartic function and return the ordered pairs along with some other information
-
-## how to use this program
-
-'insert unlisted video of using program'
+- take in ANY function and write it to a graph like feature
 
 ## function documentation
 
